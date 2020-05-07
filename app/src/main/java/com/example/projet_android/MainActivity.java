@@ -82,6 +82,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showError() {
-        Toast.makeText(getApplicationContext(), "API Error", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "API Error test", Toast.LENGTH_SHORT).show();
     }
 }

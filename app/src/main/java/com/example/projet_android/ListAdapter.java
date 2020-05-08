@@ -11,11 +11,15 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<ClasseEtOrigine> values;
     private Context context;
+    private Gson gson;
 
     class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
@@ -64,16 +68,22 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         final ClasseEtOrigine currentClass = values.get(position);
+        gson = new GsonBuilder()
+                .setLenient()
+                .create();
         holder.txtHeader.setText(currentClass.getName());
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                List<Champion> champList = currentClass.getChampions();
+                String jsonList = gson.toJson(champList);
                 Intent champ = new Intent(context, ChampionsActivity.class);
                 champ.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                champ.putExtra("className", currentClass.getName());
+                champ.putExtra("champList",jsonList);
                 context.startActivity(champ);
             }
         });
-
         holder.txtFooter.setText(currentClass.getDescription());
     }
 

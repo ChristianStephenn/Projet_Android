@@ -4,19 +4,19 @@ import java.util.List;
 
 public class Champion {
 
-    private String championName;
+    private String name;
     private Integer cost;
-    private List<String> classe;
+    private List<String> traits;
 
-    public String getChampionName() {
-        return championName;
+    public String getName() {
+        return name;
     }
 
     public Integer getCost() {
         return cost;
     }
 
-    public List<String> getClasse() {
-        return classe;
+    public List<String> getTraits() {
+        return traits;
     }
 }

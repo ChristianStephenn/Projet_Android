@@ -4,12 +4,12 @@ import java.util.List;
 
 public class ClasseEtOrigine {
 
-    private String className;
+    private String name;
     private String description;
     private List<Champion> champions;
 
-    public String getClassName() {
-        return className;
+    public String getName() {
+        return  name;
     }
 
     public String getDescription() {

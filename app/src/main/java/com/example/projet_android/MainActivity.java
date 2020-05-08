@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,36 +29,50 @@ public class MainActivity extends AppCompatActivity {
     private ListAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private static final String BASE_URL = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/";
+    private SharedPreferences sharedpreferences;
+    private Gson gson;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        showList();
-        MakeApiCall();
+        sharedpreferences = getSharedPreferences("ProjetTFT", Context.MODE_PRIVATE);
+        gson = new GsonBuilder()
+                .setLenient()
+                .create();
+
+        List<ClasseEtOrigine> classList = getDataFromCache();
+        if(classList != null ){
+            showList(classList);
+        }else{
+            MakeApiCall();
+        }
     }
 
-    private void showList() {
+    private List<ClasseEtOrigine> getDataFromCache() {
+        String jsonList = sharedpreferences.getString("jsonTFTList", null);
+
+        if(jsonList == null){
+            return null;
+        }else {
+            Type ListType = new TypeToken<List<ClasseEtOrigine>>() {
+            }.getType();
+            return gson.fromJson(jsonList, ListType);
+        }
+    }
+
+    private void showList(List<ClasseEtOrigine> classList) {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        List<String> input = new ArrayList<>();
 
-        for (int i = 0; i < 100; i++) {
-            input.add("Test" + i);
-        }
-
-        mAdapter = new ListAdapter(input);
+        mAdapter = new ListAdapter(classList);
         recyclerView.setAdapter(mAdapter);
     }
 
     private void MakeApiCall(){
-        Gson gson = new GsonBuilder()
-                .setLenient()
-                .create();
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
@@ -68,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<RestTFTResponse> call, Response<RestTFTResponse> response) {
                 if(response.isSuccessful() && response.body() != null){
                     List<ClasseEtOrigine> classList = response.body().getResults();
-                    Toast.makeText(getApplicationContext(), "API Succes", Toast.LENGTH_SHORT).show();
+                    savedList(classList);
+                    showList(classList);
                 }else{
                     showError();
                 }
@@ -79,6 +98,18 @@ public class MainActivity extends AppCompatActivity {
                 showError();
             }
         });
+    }
+
+    private void savedList(List<ClasseEtOrigine> classList) {
+        String jsonList = gson.toJson(classList);
+        sharedpreferences
+                .edit()
+                .putString("jsonTFTList", jsonList)
+                .apply();
+
+        Toast.makeText(getApplicationContext(), "List Saved", Toast.LENGTH_SHORT).show();
+
+
     }
 
     private void showError() {

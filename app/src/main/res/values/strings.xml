@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Projet_Android</string>
+    <string name="description_text">Description</string>
+    <string name="title_text">Example application</string>
+    <string name="todo_text">TODO</string>
+    <string name="return_text">return</string>
 </resources>

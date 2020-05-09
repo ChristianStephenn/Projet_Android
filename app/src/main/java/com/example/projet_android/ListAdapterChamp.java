@@ -1,5 +1,7 @@
 package com.example.projet_android;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import java.util.List;
 
 public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.ViewHolder> {
     private List<Champion> values;
+    private Context context;
 
     class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
@@ -42,8 +45,9 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    ListAdapterChamp(List<Champion> myDataset) {
+    ListAdapterChamp(List<Champion> myDataset,  Context context) {
         values = myDataset;
+        this.context = context;
     }
 
     // Create new views (invoked by the layout manager)
@@ -65,14 +69,21 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
         final Champion currentChamp = values.get(position);
+        final String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
+
         holder.txtHeader.setText(currentChamp.getName());
-        /*holder.txtHeader.setOnClickListener(new View.OnClickListener() {
+        holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                remove(position);
+                Intent DescChamp = new Intent(context, DescriptionChampActivity.class);
+                DescChamp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                DescChamp.putExtra("url", url);
+                DescChamp.putExtra("ChampName", currentChamp.getName());
+                DescChamp.putExtra("ChampCoast", currentChamp.getCost());
+                DescChamp.putExtra("ChampClass", currentChamp.getTraitsToString());
+                context.startActivity(DescChamp);
             }
-        });*/
-        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
+        });
         Picasso.get().load(url).into(holder.imageView);
         String coast = "Classes or origins: " + currentChamp.getTraitsToString();
         holder.txtFooter.setText(coast);

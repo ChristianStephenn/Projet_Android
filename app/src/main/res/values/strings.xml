@@ -4,4 +4,7 @@
     <string name="title_text">Example application</string>
     <string name="todo_text">TODO</string>
     <string name="return_text">return</string>
+    <string name="champion_name">Champion Name</string>
+    <string name="champion_coast">champion Coast</string>
+    <string name="champion_class">champion Class</string>
 </resources>

@@ -62,7 +62,7 @@ public class ChampionsActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapterChamp(champList);
+        mAdapter = new ListAdapterChamp(champList, getBaseContext());
         recyclerView.setAdapter(mAdapter);
     }
 }

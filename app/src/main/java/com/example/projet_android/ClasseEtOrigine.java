@@ -6,6 +6,7 @@ public class ClasseEtOrigine {
 
     private String name;
     private String description;
+    private String icon;
     private List<Champion> champions;
 
     public String getName() {
@@ -16,7 +17,10 @@ public class ClasseEtOrigine {
         return description;
     }
 
+    public String getIcon() { return icon; }
+
     public List<Champion> getChampions() {
         return champions;
     }
+
 }

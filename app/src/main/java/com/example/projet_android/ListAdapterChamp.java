@@ -72,7 +72,7 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
                 remove(position);
             }
         });*/
-        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/fiora.png";
+        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
         Picasso.get().load(url).into(holder.imageView);
         String coast = "Classes or origins: " + currentChamp.getTraitsToString();
         holder.txtFooter.setText(coast);

@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -23,6 +25,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         // each data item is just a string in this case
         TextView txtHeader;
         TextView txtFooter;
+        ImageView imageView;
         View layout;
 
         ViewHolder(View v) {
@@ -30,6 +33,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            imageView = (ImageView) v.findViewById(R.id.icon);
         }
     }
 
@@ -82,6 +86,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                 context.startActivity(champ);
             }
         });
+        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/ClassOrigin/" + currentClass.getIcon() + ".png";
+        Picasso.get().load(url).into(holder.imageView);
         holder.txtFooter.setText(currentClass.getDescription());
     }
 

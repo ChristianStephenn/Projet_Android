@@ -6,6 +6,7 @@ public class Champion {
 
     private String name;
     private Integer cost;
+    private String icon;
     private List<String> traits;
 
     public String getName() {
@@ -19,6 +20,8 @@ public class Champion {
     public List<String> getTraits() {
         return traits;
     }
+
+    public String getIcon() { return icon; }
 
     public String getTraitsToString() {
         String classes = traits.get(0);

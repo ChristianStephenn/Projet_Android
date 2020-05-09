@@ -38,7 +38,7 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapterChamp(List<Champion> myDataset) {
+    ListAdapterChamp(List<Champion> myDataset) {
         values = myDataset;
     }
 
@@ -69,8 +69,10 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
             }
         });*/
 
-        holder.txtFooter.setText(currentChamp.getCost());
+        String coast = "Classes or origins: " + currentChamp.getTraitsToString();
+        holder.txtFooter.setText(coast);
     }
+
 
     @Override
     public int getItemCount() {

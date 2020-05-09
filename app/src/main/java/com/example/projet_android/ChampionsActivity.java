@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -18,33 +19,44 @@ import java.util.List;
 public class ChampionsActivity extends AppCompatActivity {
     private Gson gson;
     private RecyclerView recyclerView;
-    private ListAdapter mAdapter;
+    private ListAdapterChamp mAdapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_champions);
-
         gson = new GsonBuilder()
                 .setLenient()
                 .create();
-        Type ListType = new TypeToken<List<ClasseEtOrigine>>() {
+        Type ListType = new TypeToken<List<Champion>>() {
         }.getType();
 
-        TextView textView = (TextView) findViewById(R.id.textView);
         Intent champ = getIntent();
+
+        String activity_title = champ.getStringExtra("className");
+        setTitle(activity_title);
+
         String jsonList = champ.getStringExtra("champList");
         List<Champion> champList = gson.fromJson(jsonList, ListType);
+        showChampList(champList);
+
+        Button button_return = (Button) findViewById(R.id.button_return);
+        button_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
-    private void showList(List<Champion> classList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    private void showChampList(List<Champion> champList) {
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_champ);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(classList, getBaseContext());
+        mAdapter = new ListAdapterChamp(champList);
         recyclerView.setAdapter(mAdapter);
     }
 }

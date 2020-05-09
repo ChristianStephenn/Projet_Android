@@ -1,10 +1,8 @@
 package com.example.projet_android;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -46,7 +44,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapter(List<ClasseEtOrigine> myDataset, Context context) {
+    ListAdapter(List<ClasseEtOrigine> myDataset, Context context) {
         values = myDataset;
         this.context = context;
     }
@@ -87,7 +85,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         holder.txtFooter.setText(currentClass.getDescription());
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return values.size();

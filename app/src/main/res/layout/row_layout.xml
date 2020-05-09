@@ -12,6 +12,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginEnd="6dip"
             android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
             android:contentDescription="@string/todo_text" />
 
         <TextView

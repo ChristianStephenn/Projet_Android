@@ -3,9 +3,12 @@ package com.example.projet_android;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -16,6 +19,7 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         // each data item is just a string in this case
         TextView txtHeader;
         TextView txtFooter;
+        ImageView imageView;
         View layout;
 
         ViewHolder(View v) {
@@ -23,6 +27,8 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            imageView = (ImageView) v.findViewById(R.id.icon);
+
         }
     }
 
@@ -67,7 +73,8 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
                 remove(position);
             }
         });*/
-
+        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/fiora.png";
+        Picasso.get().load(url).into(holder.imageView);
         String coast = "Classes or origins: " + currentChamp.getTraitsToString();
         holder.txtFooter.setText(coast);
     }

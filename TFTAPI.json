@@ -7,6 +7,7 @@
          "champions":[
             {
                "name":"Fiora",
+               "icon":"fiora",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -15,6 +16,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -24,6 +26,7 @@
             },
             {
                "name":"Kayle",
+               "icon":"kayle",
                "cost":4,
                "traits":[
                   "Valkyrie",
@@ -32,6 +35,7 @@
             },
             {
                "name":"Master Yi",
+               "icon":"masteryi",
                "cost":3,
                "traits":[
                   "Rebel",
@@ -40,6 +44,7 @@
             },
             {
                "name":"Shen",
+               "icon":"shen",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -48,6 +53,7 @@
             },
             {
                "name":"Xayah",
+               "icon":"xayah",
                "cost":1,
                "traits":[
                   "Celestial",
@@ -56,6 +62,7 @@
             },
             {
                "name":"Yasuo",
+               "icon":"yasuo",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -71,6 +78,7 @@
          "champions":[
             {
                "name":"Ezreal",
+               "icon":"ezreal",
                "cost":3,
                "traits":[
                   "Chrono",
@@ -79,6 +87,7 @@
             },
             {
                "name":"Graves",
+               "icon":"graves",
                "cost":1,
                "traits":[
                   "Space Pirate",
@@ -87,6 +96,7 @@
             },
             {
                "name":"Jinx",
+               "icon":"jinx",
                "cost":4,
                "traits":[
                   "Rebel",
@@ -95,6 +105,7 @@
             },
             {
                "name":"Lucian",
+               "icon":"lucian",
                "cost":2,
                "traits":[
                   "Cybernetic",
@@ -103,6 +114,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -119,6 +131,7 @@
          "champions":[
             {
                "name":"Blitzcrank",
+               "icon":"blitzcrank",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -127,6 +140,7 @@
             },
             {
                "name":"Cho'Gath",
+               "icon":"chogath",
                "cost":4,
                "traits":[
                   "Void",
@@ -135,6 +149,7 @@
             },
             {
                "name":"Malphite",
+               "icon":"malphite",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -143,6 +158,7 @@
             },
             {
                "name":"Vi",
+               "icon":"vi",
                "cost":3,
                "traits":[
                   "Cybernetic",
@@ -158,6 +174,7 @@
          "champions":[
             {
                "name":"Ashe",
+               "icon":"ashe",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -166,6 +183,7 @@
             },
             {
                "name":"Kassadin",
+               "icon":"kassadin",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -174,6 +192,7 @@
             },
             {
                "name":"Lulu",
+               "icon":"lulu",
                "cost":5,
                "traits":[
                   "Celestial",
@@ -182,6 +201,7 @@
             },
             {
                "name":"Rakan",
+               "icon":"rakan",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -190,6 +210,7 @@
             },
             {
                "name":"Xayah",
+               "icon":"xayah",
                "cost":1,
                "traits":[
                   "Celestial",
@@ -198,6 +219,7 @@
             },
             {
                "name":"Xin Zhao",
+               "icon":"xinzhao",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -213,6 +235,7 @@
          "champions":[
             {
                "name":"Blitzcrank",
+               "icon":"blitzcrank",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -221,6 +244,7 @@
             },
             {
                "name":"Caitlyn",
+               "icon":"caitlyn",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -229,6 +253,7 @@
             },
             {
                "name":"Ezreal",
+               "icon":"ezreal",
                "cost":3,
                "traits":[
                   "Chrono",
@@ -237,6 +262,7 @@
             },
             {
                "name":"Shen",
+               "icon":"shen",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -245,6 +271,7 @@
             },
             {
                "name":"Thresh",
+               "icon":"thresh",
                "cost":5,
                "traits":[
                   "Chrono",
@@ -253,6 +280,7 @@
             },
             {
                "name":"Twisted Fate",
+               "icon":"twistedfate",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -261,6 +289,7 @@
             },
             {
                "name":"Wukong",
+               "icon":"wukong",
                "cost":4,
                "traits":[
                   "Chrono",
@@ -276,6 +305,7 @@
          "champions":[
             {
                "name":"Ekko",
+               "icon":"ekko",
                "cost":5,
                "traits":[
                   "Cybernetic",
@@ -284,6 +314,7 @@
             },
             {
                "name":"Fiora",
+               "icon":"fiora",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -292,6 +323,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -301,6 +333,7 @@
             },
             {
                "name":"Leona",
+               "icon":"leona",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -309,6 +342,7 @@
             },
             {
                "name":"Lucian",
+               "icon":"lucian",
                "cost":2,
                "traits":[
                   "Cybernetic",
@@ -317,6 +351,7 @@
             },
             {
                "name":"Vi",
+               "icon":"vi",
                "cost":3,
                "traits":[
                   "Cybernetic",
@@ -332,6 +367,7 @@
          "champions":[
             {
                "name":"Jarvan IV",
+               "icon":"jarvaniv",
                "cost":1,
                "traits":[
                   "Dark Star",
@@ -340,6 +376,7 @@
             },
             {
                "name":"Jhin",
+               "icon":"jhin",
                "cost":4,
                "traits":[
                   "Dark Star",
@@ -348,6 +385,7 @@
             },
             {
                "name":"Karma",
+               "icon":"karma",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -356,6 +394,7 @@
             },
             {
                "name":"Lux",
+               "icon":"lux",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -364,6 +403,7 @@
             },
             {
                "name":"Mordekaiser",
+               "icon":"mordekaiser",
                "cost":2,
                "traits":[
                   "Dark Star",
@@ -372,6 +412,7 @@
             },
             {
                "name":"Shaco",
+               "icon":"shaco",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -380,6 +421,7 @@
             },
             {
                "name":"Xerath",
+               "icon":"xerath",
                "cost":5,
                "traits":[
                   "Dark Star",
@@ -395,6 +437,7 @@
          "champions":[
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -404,6 +447,7 @@
             },
             {
                "name":"Rumble",
+               "icon":"rumble",
                "cost":3,
                "traits":[
                   "Mech-Pilot",
@@ -412,6 +456,7 @@
             },
             {
                "name":"Ziggs",
+               "icon":"ziggs",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -427,6 +472,7 @@
          "champions":[
             {
                "name":"Kai'Sa",
+               "icon":"kaisa",
                "cost":2,
                "traits":[
                   "Valkyrie",
@@ -435,6 +481,7 @@
             },
             {
                "name":"Kha'Zix",
+               "icon":"khazix",
                "cost":1,
                "traits":[
                   "Void",
@@ -443,6 +490,7 @@
             },
             {
                "name":"Shaco",
+               "icon":"shaco",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -451,6 +499,7 @@
             },
             {
                "name":"Fizz",
+               "icon":"fizz",
                "cost":4,
                "traits":[
                   "Mech-Pilot",
@@ -466,6 +515,7 @@
          "champions":[
             {
                "name":"Darius",
+               "icon":"darius",
                "cost":2,
                "traits":[
                   "Space Pirate",
@@ -474,6 +524,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -483,6 +534,7 @@
             },
             {
                "name":"Kassadin",
+               "icon":"kassadin",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -491,6 +543,7 @@
             },
             {
                "name":"Thresh",
+               "icon":"thresh",
                "cost":5,
                "traits":[
                   "Chrono",
@@ -506,6 +559,7 @@
          "champions":[
             {
                "name":"Annie",
+               "icon":"annie",
                "cost":2,
                "traits":[
                   "Mech-Pilot",
@@ -514,6 +568,7 @@
             },
             {
                "name":"Fizz",
+               "icon":"fizz",
                "cost":4,
                "traits":[
                   "Mech-Pilot",
@@ -522,6 +577,7 @@
             },
             {
                "name":"Rumble",
+               "icon":"rumble",
                "cost":3,
                "traits":[
                   "Mech-Pilot",
@@ -537,6 +593,7 @@
          "champions":[
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -546,6 +603,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -562,6 +620,7 @@
          "champions":[
             {
                "name":"Karma",
+               "icon":"karma",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -570,6 +629,7 @@
             },
             {
                "name":"Lulu",
+               "icon":"lulu",
                "cost":5,
                "traits":[
                   "Celestial",
@@ -578,6 +638,7 @@
             },
             {
                "name":"Sona",
+               "icon":"sona",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -586,6 +647,7 @@
             },
             {
                "name":"Soraka",
+               "icon":"soraka",
                "cost":4,
                "traits":[
                   "Star Guardian",
@@ -601,6 +663,7 @@
          "champions":[
             {
                "name":"Jarvan IV",
+               "icon":"jarvaniv",
                "cost":1,
                "traits":[
                   "Dark Star",
@@ -609,6 +672,7 @@
             },
             {
                "name":"Neeko",
+               "icon":"neeko",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -617,6 +681,7 @@
             },
             {
                "name":"Rakan",
+               "icon":"rakan",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -625,6 +690,7 @@
             },
             {
                "name":"Xin Zhao",
+               "icon":"xinzhao",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -640,6 +706,7 @@
          "champions":[
             {
                "name":"Aurelion Sol",
+               "icon":"aurelionsol",
                "cost":5,
                "traits":[
                   "Rebel",
@@ -648,6 +715,7 @@
             },
             {
                "name":"Jinx",
+               "icon":"jinx",
                "cost":4,
                "traits":[
                   "Rebel",
@@ -656,6 +724,7 @@
             },
             {
                "name":"Malphite",
+               "icon":"malphite",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -664,6 +733,7 @@
             },
             {
                "name":"Master Yi",
+               "icon":"masteryi",
                "cost":3,
                "traits":[
                   "Rebel",
@@ -672,6 +742,7 @@
             },
             {
                "name":"Sona",
+               "icon":"sona",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -680,6 +751,7 @@
             },
             {
                "name":"Yasuo",
+               "icon":"yasuo",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -688,6 +760,7 @@
             },
             {
                "name":"Ziggs",
+               "icon":"ziggs",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -703,6 +776,7 @@
          "champions":[
             {
                "name":"Ashe",
+               "icon":"ashe",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -711,6 +785,7 @@
             },
             {
                "name":"Caitlyn",
+               "icon":"caitlyn",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -719,6 +794,7 @@
             },
             {
                "name":"Jhin",
+               "icon":"jhin",
                "cost":4,
                "traits":[
                   "Dark Star",
@@ -734,6 +810,7 @@
          "champions":[
             {
                "name":"Ahri",
+               "icon":"ahri",
                "cost":2,
                "traits":[
                   "Star Guardian",
@@ -742,6 +819,7 @@
             },
             {
                "name":"Annie",
+               "icon":"annie",
                "cost":2,
                "traits":[
                   "Mech-Pilot",
@@ -750,6 +828,7 @@
             },
             {
                "name":"Lux",
+               "icon":"lux",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -758,6 +837,7 @@
             },
             {
                "name":"Syndra",
+               "icon":"syndra",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -766,6 +846,7 @@
             },
             {
                "name":"Twisted Fate",
+               "icon":"twistedfate",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -774,6 +855,7 @@
             },
             {
                "name":"Vel'Koz",
+               "icon":"velkoz",
                "cost":4,
                "traits":[
                   "Void",
@@ -782,6 +864,7 @@
             },
             {
                "name":"Xerath",
+               "icon":"xerath",
                "cost":5,
                "traits":[
                   "Dark Star",
@@ -790,6 +873,7 @@
             },
             {
                "name":"Zoe",
+               "icon":"zoe",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -805,6 +889,7 @@
          "champions":[
             {
                "name":"Darius",
+               "icon":"darius",
                "cost":2,
                "traits":[
                   "Space Pirate",
@@ -813,6 +898,7 @@
             },
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -822,6 +908,7 @@
             },
             {
                "name":"Graves",
+               "icon":"graves",
                "cost":1,
                "traits":[
                   "Space Pirate",
@@ -830,6 +917,7 @@
             },
             {
                "name":"Jayce",
+               "icon":"jayce",
                "cost":3,
                "traits":[
                   "Space Pirate",
@@ -845,6 +933,7 @@
          "champions":[
             {
                "name":"Ahri",
+               "icon":"ahri",
                "cost":2,
                "traits":[
                   "Star Guardian",
@@ -853,6 +942,7 @@
             },
             {
                "name":"Neeko",
+               "icon":"neeko",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -861,6 +951,7 @@
             },
             {
                "name":"Poppy",
+               "icon":"poppy",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -869,6 +960,7 @@
             },
             {
                "name":"Soraka",
+               "icon":"soraka",
                "cost":4,
                "traits":[
                   "Star Guardian",
@@ -877,6 +969,7 @@
             },
             {
                "name":"Syndra",
+               "icon":"syndra",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -885,6 +978,7 @@
             },
             {
                "name":"Zoe",
+               "icon":"zoe",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -900,6 +994,7 @@
          "champions":[
             {
                "name":"Aurelion Sol",
+               "icon":"aurelionsol",
                "cost":5,
                "traits":[
                   "Rebel",
@@ -915,6 +1010,7 @@
          "champions":[
             {
                "name":"Kai'Sa",
+               "icon":"kaisa",
                "cost":2,
                "traits":[
                   "Valkyrie",
@@ -923,6 +1019,7 @@
             },
             {
                "name":"Kayle",
+               "icon":"kayle",
                "cost":4,
                "traits":[
                   "Valkyrie",
@@ -931,6 +1028,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -947,6 +1045,7 @@
          "champions":[
             {
                "name":"Jayce",
+               "icon":"jayce",
                "cost":3,
                "traits":[
                   "Space Pirate",
@@ -955,6 +1054,7 @@
             },
             {
                "name":"Leona",
+               "icon":"leona",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -963,6 +1063,7 @@
             },
             {
                "name":"Mordekaiser",
+               "icon":"mordekaiser",
                "cost":2,
                "traits":[
                   "Dark Star",
@@ -971,6 +1072,7 @@
             },
             {
                "name":"Poppy",
+               "icon":"poppy",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -979,6 +1081,7 @@
             },
             {
                "name":"Wukong",
+               "icon":"wukong",
                "cost":4,
                "traits":[
                   "Chrono",
@@ -994,6 +1097,7 @@
          "champions":[
             {
                "name":"Cho'Gath",
+               "icon":"chogath",
                "cost":4,
                "traits":[
                   "Void",
@@ -1002,6 +1106,7 @@
             },
             {
                "name":"Kha'Zix",
+               "icon":"khazix",
                "cost":1,
                "traits":[
                   "Void",
@@ -1010,6 +1115,7 @@
             },
             {
                "name":"Vel'Koz",
+               "icon":"velkoz",
                "cost":4,
                "traits":[
                   "Void",

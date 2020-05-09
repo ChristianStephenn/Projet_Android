@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -21,6 +22,7 @@ public class ChampionsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ListAdapterChamp mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,10 @@ public class ChampionsActivity extends AppCompatActivity {
 
         String activity_title = champ.getStringExtra("className");
         setTitle(activity_title);
+
+        textView = (TextView) findViewById(R.id.DescClass);
+        String Desc = champ.getStringExtra("Desc");
+        textView.setText(Desc);
 
         String jsonList = champ.getStringExtra("champList");
         List<Champion> champList = gson.fromJson(jsonList, ListType);

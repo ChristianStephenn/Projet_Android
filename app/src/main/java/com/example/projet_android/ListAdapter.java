@@ -82,6 +82,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                 Intent champ = new Intent(context, ChampionsActivity.class);
                 champ.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 champ.putExtra("className", currentClass.getName());
+                champ.putExtra("Desc",currentClass.getDescription());
                 champ.putExtra("champList",jsonList);
                 context.startActivity(champ);
             }

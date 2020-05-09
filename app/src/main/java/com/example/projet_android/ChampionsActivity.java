@@ -18,7 +18,7 @@ import java.util.List;
 public class ChampionsActivity extends AppCompatActivity {
     private Gson gson;
     private RecyclerView recyclerView;
-    private ListAdapter mAdapter;
+    private ListAdapterChamp mAdapter;
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
@@ -32,19 +32,20 @@ public class ChampionsActivity extends AppCompatActivity {
         Type ListType = new TypeToken<List<ClasseEtOrigine>>() {
         }.getType();
 
-        TextView textView = (TextView) findViewById(R.id.textView);
+        //TextView textView = (TextView) findViewById(R.id.textView);
         Intent champ = getIntent();
         String jsonList = champ.getStringExtra("champList");
         List<Champion> champList = gson.fromJson(jsonList, ListType);
+        showChampList(champList);
     }
 
-    private void showList(List<Champion> classList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    private void showChampList(List<Champion> champList) {
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_champ);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(classList, getBaseContext());
+        mAdapter = new ListAdapterChamp(champList);
         recyclerView.setAdapter(mAdapter);
     }
 }

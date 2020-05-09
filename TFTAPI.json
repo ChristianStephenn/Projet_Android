@@ -2,10 +2,12 @@
    "results":[
       {
          "name":"Blademaster",
+         "icon":"Blademaster",
          "description":"Blademasters' Basic Attacks have a chance to trigger two additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
          "champions":[
             {
                "name":"Fiora",
+               "icon":"fiora",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -14,6 +16,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -23,6 +26,7 @@
             },
             {
                "name":"Kayle",
+               "icon":"kayle",
                "cost":4,
                "traits":[
                   "Valkyrie",
@@ -31,6 +35,7 @@
             },
             {
                "name":"Master Yi",
+               "icon":"masteryi",
                "cost":3,
                "traits":[
                   "Rebel",
@@ -39,6 +44,7 @@
             },
             {
                "name":"Shen",
+               "icon":"shen",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -47,6 +53,7 @@
             },
             {
                "name":"Xayah",
+               "icon":"xayah",
                "cost":1,
                "traits":[
                   "Celestial",
@@ -55,6 +62,7 @@
             },
             {
                "name":"Yasuo",
+               "icon":"yasuo",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -65,10 +73,12 @@
       },
       {
          "name":"Blaster",
+         "icon":"Blaster",
          "description":"Every fourth Basic Attack from a Blaster fires additional attacks at random enemies. These additional attacks deal damage like Basic Attacks, trigger on-hit effects, and can critically hit.",
          "champions":[
             {
                "name":"Ezreal",
+               "icon":"ezreal",
                "cost":3,
                "traits":[
                   "Chrono",
@@ -77,6 +87,7 @@
             },
             {
                "name":"Graves",
+               "icon":"graves",
                "cost":1,
                "traits":[
                   "Space Pirate",
@@ -85,6 +96,7 @@
             },
             {
                "name":"Jinx",
+               "icon":"jinx",
                "cost":4,
                "traits":[
                   "Rebel",
@@ -93,6 +105,7 @@
             },
             {
                "name":"Lucian",
+               "icon":"lucian",
                "cost":2,
                "traits":[
                   "Cybernetic",
@@ -101,6 +114,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -112,10 +126,12 @@
       },
       {
          "name":"Brawler",
+         "icon":"Brawler",
          "description":"Brawlers gain bonus Maximum Health.",
          "champions":[
             {
                "name":"Blitzcrank",
+               "icon":"blitzcrank",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -124,6 +140,7 @@
             },
             {
                "name":"Cho'Gath",
+               "icon":"chogath",
                "cost":4,
                "traits":[
                   "Void",
@@ -132,6 +149,7 @@
             },
             {
                "name":"Malphite",
+               "icon":"malphite",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -140,6 +158,7 @@
             },
             {
                "name":"Vi",
+               "icon":"vi",
                "cost":3,
                "traits":[
                   "Cybernetic",
@@ -150,10 +169,12 @@
       },
       {
          "name":"Celestial",
+         "icon":"Celestial",
          "description":"All allies heal for some of the damage they deal with spells and attacks.",
          "champions":[
             {
                "name":"Ashe",
+               "icon":"ashe",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -162,6 +183,7 @@
             },
             {
                "name":"Kassadin",
+               "icon":"kassadin",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -170,6 +192,7 @@
             },
             {
                "name":"Lulu",
+               "icon":"lulu",
                "cost":5,
                "traits":[
                   "Celestial",
@@ -178,6 +201,7 @@
             },
             {
                "name":"Rakan",
+               "icon":"rakan",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -186,6 +210,7 @@
             },
             {
                "name":"Xayah",
+               "icon":"xayah",
                "cost":1,
                "traits":[
                   "Celestial",
@@ -194,6 +219,7 @@
             },
             {
                "name":"Xin Zhao",
+               "icon":"xinzhao",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -204,10 +230,12 @@
       },
       {
          "name":"Chrono",
+         "icon":"Chrono",
          "description":"All allies gain attack speed every few seconds.",
          "champions":[
             {
                "name":"Blitzcrank",
+               "icon":"blitzcrank",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -216,6 +244,7 @@
             },
             {
                "name":"Caitlyn",
+               "icon":"caitlyn",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -224,6 +253,7 @@
             },
             {
                "name":"Ezreal",
+               "icon":"ezreal",
                "cost":3,
                "traits":[
                   "Chrono",
@@ -232,6 +262,7 @@
             },
             {
                "name":"Shen",
+               "icon":"shen",
                "cost":2,
                "traits":[
                   "Chrono",
@@ -240,6 +271,7 @@
             },
             {
                "name":"Thresh",
+               "icon":"thresh",
                "cost":5,
                "traits":[
                   "Chrono",
@@ -248,6 +280,7 @@
             },
             {
                "name":"Twisted Fate",
+               "icon":"twistedfate",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -256,6 +289,7 @@
             },
             {
                "name":"Wukong",
+               "icon":"wukong",
                "cost":4,
                "traits":[
                   "Chrono",
@@ -266,10 +300,12 @@
       },
       {
          "name":"Cybernetic",
+         "icon":"Cybernetic",
          "description":"Cybernetic champions with at least one item gain Health and Attack Damage.",
          "champions":[
             {
                "name":"Ekko",
+               "icon":"ekko",
                "cost":5,
                "traits":[
                   "Cybernetic",
@@ -278,6 +314,7 @@
             },
             {
                "name":"Fiora",
+               "icon":"fiora",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -286,6 +323,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -295,6 +333,7 @@
             },
             {
                "name":"Leona",
+               "icon":"leona",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -303,6 +342,7 @@
             },
             {
                "name":"Lucian",
+               "icon":"lucian",
                "cost":2,
                "traits":[
                   "Cybernetic",
@@ -311,6 +351,7 @@
             },
             {
                "name":"Vi",
+               "icon":"vi",
                "cost":3,
                "traits":[
                   "Cybernetic",
@@ -321,10 +362,12 @@
       },
       {
          "name":"Dark Star",
+         "icon":"Darkstar",
          "description":"When a Dark Star champion dies they give increased damage, plus any previous stacks of this effect, to the nearest ally Dark Star champion.",
          "champions":[
             {
                "name":"Jarvan IV",
+               "icon":"jarvaniv",
                "cost":1,
                "traits":[
                   "Dark Star",
@@ -333,6 +376,7 @@
             },
             {
                "name":"Jhin",
+               "icon":"jhin",
                "cost":4,
                "traits":[
                   "Dark Star",
@@ -341,6 +385,7 @@
             },
             {
                "name":"Karma",
+               "icon":"karma",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -349,6 +394,7 @@
             },
             {
                "name":"Lux",
+               "icon":"lux",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -357,6 +403,7 @@
             },
             {
                "name":"Mordekaiser",
+               "icon":"mordekaiser",
                "cost":2,
                "traits":[
                   "Dark Star",
@@ -365,6 +412,7 @@
             },
             {
                "name":"Shaco",
+               "icon":"shaco",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -373,6 +421,7 @@
             },
             {
                "name":"Xerath",
+               "icon":"xerath",
                "cost":5,
                "traits":[
                   "Dark Star",
@@ -383,10 +432,12 @@
       },
       {
          "name":"Demolitionist",
+         "icon":"Demolitionist",
          "description":"Damage from Demolitionists' spellcasts stuns their targets for a few seconds. (Once per spellcast)",
          "champions":[
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -396,6 +447,7 @@
             },
             {
                "name":"Rumble",
+               "icon":"rumble",
                "cost":3,
                "traits":[
                   "Mech-Pilot",
@@ -404,6 +456,7 @@
             },
             {
                "name":"Ziggs",
+               "icon":"ziggs",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -414,10 +467,12 @@
       },
       {
          "name":"Infiltrator",
+         "icon":"Infiltrator",
          "description":"Infiltrators gain Attack Speed for a few seconds at the start of combat.",
          "champions":[
             {
                "name":"Kai'Sa",
+               "icon":"kaisa",
                "cost":2,
                "traits":[
                   "Valkyrie",
@@ -426,6 +481,7 @@
             },
             {
                "name":"Kha'Zix",
+               "icon":"khazix",
                "cost":1,
                "traits":[
                   "Void",
@@ -434,6 +490,7 @@
             },
             {
                "name":"Shaco",
+               "icon":"shaco",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -442,6 +499,7 @@
             },
             {
                "name":"Fizz",
+               "icon":"fizz",
                "cost":4,
                "traits":[
                   "Mech-Pilot",
@@ -452,10 +510,12 @@
       },
       {
          "name":"Mana-Reaver",
+         "icon":"Manareaver",
          "description":"Mana-Reavers' Basic Attacks increase the mana cost of their target's next spellcast by a percentage.",
          "champions":[
             {
                "name":"Darius",
+               "icon":"darius",
                "cost":2,
                "traits":[
                   "Space Pirate",
@@ -464,6 +524,7 @@
             },
             {
                "name":"Irelia",
+               "icon":"irelia",
                "cost":4,
                "traits":[
                   "Cybernetic",
@@ -473,6 +534,7 @@
             },
             {
                "name":"Kassadin",
+               "icon":"kassadin",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -481,6 +543,7 @@
             },
             {
                "name":"Thresh",
+               "icon":"thresh",
                "cost":5,
                "traits":[
                   "Chrono",
@@ -491,10 +554,12 @@
       },
       {
          "name":"Mech-Pilot",
+         "icon":"Mechpilot",
          "description":"At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its pilots, as well as 3 random items from among them. When the Super-Mech dies the Pilots are ejected, granted Mana, and continue to fight.",
          "champions":[
             {
                "name":"Annie",
+               "icon":"annie",
                "cost":2,
                "traits":[
                   "Mech-Pilot",
@@ -503,6 +568,7 @@
             },
             {
                "name":"Fizz",
+               "icon":"fizz",
                "cost":4,
                "traits":[
                   "Mech-Pilot",
@@ -511,6 +577,7 @@
             },
             {
                "name":"Rumble",
+               "icon":"rumble",
                "cost":3,
                "traits":[
                   "Mech-Pilot",
@@ -521,10 +588,12 @@
       },
       {
          "name":"Mercenary",
+         "icon":"Mercenary",
          "description":"Upgrades for Mercenaries' spells have a chance to appear in the shop.",
          "champions":[
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -534,6 +603,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -545,10 +615,12 @@
       },
       {
          "name":"Mystic",
+         "icon":"Mystic",
          "description":"All allies gain Magic Resistance.",
          "champions":[
             {
                "name":"Karma",
+               "icon":"karma",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -557,6 +629,7 @@
             },
             {
                "name":"Lulu",
+               "icon":"lulu",
                "cost":5,
                "traits":[
                   "Celestial",
@@ -565,6 +638,7 @@
             },
             {
                "name":"Sona",
+               "icon":"sona",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -573,6 +647,7 @@
             },
             {
                "name":"Soraka",
+               "icon":"soraka",
                "cost":4,
                "traits":[
                   "Star Guardian",
@@ -583,10 +658,12 @@
       },
       {
          "name":"Protector",
+         "icon":"Protector",
          "description":"Protectors shield themselves for a few seconds whenever they cast a spell. This shield doesn't stack.",
          "champions":[
             {
                "name":"Jarvan IV",
+               "icon":"jarvaniv",
                "cost":1,
                "traits":[
                   "Dark Star",
@@ -595,6 +672,7 @@
             },
             {
                "name":"Neeko",
+               "icon":"neeko",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -603,6 +681,7 @@
             },
             {
                "name":"Rakan",
+               "icon":"rakan",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -611,6 +690,7 @@
             },
             {
                "name":"Xin Zhao",
+               "icon":"xinzhao",
                "cost":2,
                "traits":[
                   "Celestial",
@@ -621,10 +701,12 @@
       },
       {
          "name":"Rebel",
+         "icon":"Rebel",
          "description":"At the start of combat, Rebels gain a shield and bonus damage for each adjacent Rebel. The shield lasts for a few seconds.",
          "champions":[
             {
                "name":"Aurelion Sol",
+               "icon":"aurelionsol",
                "cost":5,
                "traits":[
                   "Rebel",
@@ -633,6 +715,7 @@
             },
             {
                "name":"Jinx",
+               "icon":"jinx",
                "cost":4,
                "traits":[
                   "Rebel",
@@ -641,6 +724,7 @@
             },
             {
                "name":"Malphite",
+               "icon":"malphite",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -649,6 +733,7 @@
             },
             {
                "name":"Master Yi",
+               "icon":"masteryi",
                "cost":3,
                "traits":[
                   "Rebel",
@@ -657,6 +742,7 @@
             },
             {
                "name":"Sona",
+               "icon":"sona",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -665,6 +751,7 @@
             },
             {
                "name":"Yasuo",
+               "icon":"yasuo",
                "cost":2,
                "traits":[
                   "Rebel",
@@ -673,6 +760,7 @@
             },
             {
                "name":"Ziggs",
+               "icon":"ziggs",
                "cost":1,
                "traits":[
                   "Rebel",
@@ -683,10 +771,12 @@
       },
       {
          "name":"Sniper",
+         "icon":"Sniper",
          "description":"Snipers deal percentage increased damage for each hex between themselves and their target.",
          "champions":[
             {
                "name":"Ashe",
+               "icon":"ashe",
                "cost":3,
                "traits":[
                   "Celestial",
@@ -695,6 +785,7 @@
             },
             {
                "name":"Caitlyn",
+               "icon":"caitlyn",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -703,6 +794,7 @@
             },
             {
                "name":"Jhin",
+               "icon":"jhin",
                "cost":4,
                "traits":[
                   "Dark Star",
@@ -713,10 +805,12 @@
       },
       {
          "name":"Sorcerer",
+         "icon":"Sorcerer",
          "description":"All allies have increased Spell Power.",
          "champions":[
             {
                "name":"Ahri",
+               "icon":"ahri",
                "cost":2,
                "traits":[
                   "Star Guardian",
@@ -725,6 +819,7 @@
             },
             {
                "name":"Annie",
+               "icon":"annie",
                "cost":2,
                "traits":[
                   "Mech-Pilot",
@@ -733,6 +828,7 @@
             },
             {
                "name":"Lux",
+               "icon":"lux",
                "cost":3,
                "traits":[
                   "Dark Star",
@@ -741,6 +837,7 @@
             },
             {
                "name":"Syndra",
+               "icon":"syndra",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -749,6 +846,7 @@
             },
             {
                "name":"Twisted Fate",
+               "icon":"twistedfate",
                "cost":1,
                "traits":[
                   "Chrono",
@@ -757,6 +855,7 @@
             },
             {
                "name":"Vel'Koz",
+               "icon":"velkoz",
                "cost":4,
                "traits":[
                   "Void",
@@ -765,6 +864,7 @@
             },
             {
                "name":"Xerath",
+               "icon":"xerath",
                "cost":5,
                "traits":[
                   "Dark Star",
@@ -773,6 +873,7 @@
             },
             {
                "name":"Zoe",
+               "icon":"zoe",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -783,10 +884,12 @@
       },
       {
          "name":"Space Pirate",
+         "icon":"Spacepirate",
          "description":"Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
          "champions":[
             {
                "name":"Darius",
+               "icon":"darius",
                "cost":2,
                "traits":[
                   "Space Pirate",
@@ -795,6 +898,7 @@
             },
             {
                "name":"Gangplank",
+               "icon":"gangplank",
                "cost":5,
                "traits":[
                   "Space Pirate",
@@ -804,6 +908,7 @@
             },
             {
                "name":"Graves",
+               "icon":"graves",
                "cost":1,
                "traits":[
                   "Space Pirate",
@@ -812,6 +917,7 @@
             },
             {
                "name":"Jayce",
+               "icon":"jayce",
                "cost":3,
                "traits":[
                   "Space Pirate",
@@ -822,10 +928,12 @@
       },
       {
          "name":"Star Guardian",
+         "icon":"Starguardian",
          "description":"Star Guardians' spellcasts grant Mana to other Star Guardians, spread among them.",
          "champions":[
             {
                "name":"Ahri",
+               "icon":"ahri",
                "cost":2,
                "traits":[
                   "Star Guardian",
@@ -834,6 +942,7 @@
             },
             {
                "name":"Neeko",
+               "icon":"neeko",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -842,6 +951,7 @@
             },
             {
                "name":"Poppy",
+               "icon":"poppy",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -850,6 +960,7 @@
             },
             {
                "name":"Soraka",
+               "icon":"soraka",
                "cost":4,
                "traits":[
                   "Star Guardian",
@@ -858,6 +969,7 @@
             },
             {
                "name":"Syndra",
+               "icon":"syndra",
                "cost":3,
                "traits":[
                   "Star Guardian",
@@ -866,6 +978,7 @@
             },
             {
                "name":"Zoe",
+               "icon":"zoe",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -876,10 +989,12 @@
       },
       {
          "name":"Starship",
+         "icon":"Starship",
          "description":"Starships gain mana per second, maneuver around the board, and are immune to movement impairing effects, but can't make Basic Attacks.",
          "champions":[
             {
                "name":"Aurelion Sol",
+               "icon":"aurelionsol",
                "cost":5,
                "traits":[
                   "Rebel",
@@ -890,10 +1005,12 @@
       },
       {
          "name":"Valkyrie",
+         "icon":"Valkyrie",
          "description":"Valkyrie attacks and spells always critically hit targets below a percentage health.",
          "champions":[
             {
                "name":"Kai'Sa",
+               "icon":"kaisa",
                "cost":2,
                "traits":[
                   "Valkyrie",
@@ -902,6 +1019,7 @@
             },
             {
                "name":"Kayle",
+               "icon":"kayle",
                "cost":4,
                "traits":[
                   "Valkyrie",
@@ -910,6 +1028,7 @@
             },
             {
                "name":"Miss Fortune",
+               "icon":"missfortune",
                "cost":5,
                "traits":[
                   "Valkyrie",
@@ -921,10 +1040,12 @@
       },
       {
          "name":"Vanguard",
+         "icon":"Vanguard",
          "description":"Vanguard champions gain bonus Armor.",
          "champions":[
             {
                "name":"Jayce",
+               "icon":"jayce",
                "cost":3,
                "traits":[
                   "Space Pirate",
@@ -933,6 +1054,7 @@
             },
             {
                "name":"Leona",
+               "icon":"leona",
                "cost":1,
                "traits":[
                   "Cybernetic",
@@ -941,6 +1063,7 @@
             },
             {
                "name":"Mordekaiser",
+               "icon":"mordekaiser",
                "cost":2,
                "traits":[
                   "Dark Star",
@@ -949,6 +1072,7 @@
             },
             {
                "name":"Poppy",
+               "icon":"poppy",
                "cost":1,
                "traits":[
                   "Star Guardian",
@@ -957,6 +1081,7 @@
             },
             {
                "name":"Wukong",
+               "icon":"wukong",
                "cost":4,
                "traits":[
                   "Chrono",
@@ -967,10 +1092,12 @@
       },
       {
          "name":"Void",
+         "icon":"Void",
          "description":"Attacks and spells from Void champions deal true damage.",
          "champions":[
             {
                "name":"Cho'Gath",
+               "icon":"chogath",
                "cost":4,
                "traits":[
                   "Void",
@@ -979,6 +1106,7 @@
             },
             {
                "name":"Kha'Zix",
+               "icon":"khazix",
                "cost":1,
                "traits":[
                   "Void",
@@ -987,6 +1115,7 @@
             },
             {
                "name":"Vel'Koz",
+               "icon":"velkoz",
                "cost":4,
                "traits":[
                   "Void",

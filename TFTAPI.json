@@ -2,6 +2,7 @@
    "results":[
       {
          "name":"Blademaster",
+         "icon":"Blademaster",
          "description":"Blademasters' Basic Attacks have a chance to trigger two additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
          "champions":[
             {
@@ -65,6 +66,7 @@
       },
       {
          "name":"Blaster",
+         "icon":"Blaster",
          "description":"Every fourth Basic Attack from a Blaster fires additional attacks at random enemies. These additional attacks deal damage like Basic Attacks, trigger on-hit effects, and can critically hit.",
          "champions":[
             {
@@ -112,6 +114,7 @@
       },
       {
          "name":"Brawler",
+         "icon":"Brawler",
          "description":"Brawlers gain bonus Maximum Health.",
          "champions":[
             {
@@ -150,6 +153,7 @@
       },
       {
          "name":"Celestial",
+         "icon":"Celestial",
          "description":"All allies heal for some of the damage they deal with spells and attacks.",
          "champions":[
             {
@@ -204,6 +208,7 @@
       },
       {
          "name":"Chrono",
+         "icon":"Chrono",
          "description":"All allies gain attack speed every few seconds.",
          "champions":[
             {
@@ -266,6 +271,7 @@
       },
       {
          "name":"Cybernetic",
+         "icon":"Cybernetic",
          "description":"Cybernetic champions with at least one item gain Health and Attack Damage.",
          "champions":[
             {
@@ -321,6 +327,7 @@
       },
       {
          "name":"Dark Star",
+         "icon":"Darkstar",
          "description":"When a Dark Star champion dies they give increased damage, plus any previous stacks of this effect, to the nearest ally Dark Star champion.",
          "champions":[
             {
@@ -383,6 +390,7 @@
       },
       {
          "name":"Demolitionist",
+         "icon":"Demolitionist",
          "description":"Damage from Demolitionists' spellcasts stuns their targets for a few seconds. (Once per spellcast)",
          "champions":[
             {
@@ -414,6 +422,7 @@
       },
       {
          "name":"Infiltrator",
+         "icon":"Infiltrator",
          "description":"Infiltrators gain Attack Speed for a few seconds at the start of combat.",
          "champions":[
             {
@@ -452,6 +461,7 @@
       },
       {
          "name":"Mana-Reaver",
+         "icon":"Manareaver",
          "description":"Mana-Reavers' Basic Attacks increase the mana cost of their target's next spellcast by a percentage.",
          "champions":[
             {
@@ -491,6 +501,7 @@
       },
       {
          "name":"Mech-Pilot",
+         "icon":"Mechpilot",
          "description":"At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its pilots, as well as 3 random items from among them. When the Super-Mech dies the Pilots are ejected, granted Mana, and continue to fight.",
          "champions":[
             {
@@ -521,6 +532,7 @@
       },
       {
          "name":"Mercenary",
+         "icon":"Mercenary",
          "description":"Upgrades for Mercenaries' spells have a chance to appear in the shop.",
          "champions":[
             {
@@ -545,6 +557,7 @@
       },
       {
          "name":"Mystic",
+         "icon":"Mystic",
          "description":"All allies gain Magic Resistance.",
          "champions":[
             {
@@ -583,6 +596,7 @@
       },
       {
          "name":"Protector",
+         "icon":"Protector",
          "description":"Protectors shield themselves for a few seconds whenever they cast a spell. This shield doesn't stack.",
          "champions":[
             {
@@ -621,6 +635,7 @@
       },
       {
          "name":"Rebel",
+         "icon":"Rebel",
          "description":"At the start of combat, Rebels gain a shield and bonus damage for each adjacent Rebel. The shield lasts for a few seconds.",
          "champions":[
             {
@@ -683,6 +698,7 @@
       },
       {
          "name":"Sniper",
+         "icon":"Sniper",
          "description":"Snipers deal percentage increased damage for each hex between themselves and their target.",
          "champions":[
             {
@@ -713,6 +729,7 @@
       },
       {
          "name":"Sorcerer",
+         "icon":"Sorcerer",
          "description":"All allies have increased Spell Power.",
          "champions":[
             {
@@ -783,6 +800,7 @@
       },
       {
          "name":"Space Pirate",
+         "icon":"Spacepirate",
          "description":"Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
          "champions":[
             {
@@ -822,6 +840,7 @@
       },
       {
          "name":"Star Guardian",
+         "icon":"Starguardian",
          "description":"Star Guardians' spellcasts grant Mana to other Star Guardians, spread among them.",
          "champions":[
             {
@@ -876,6 +895,7 @@
       },
       {
          "name":"Starship",
+         "icon":"Starship",
          "description":"Starships gain mana per second, maneuver around the board, and are immune to movement impairing effects, but can't make Basic Attacks.",
          "champions":[
             {
@@ -890,6 +910,7 @@
       },
       {
          "name":"Valkyrie",
+         "icon":"Valkyrie",
          "description":"Valkyrie attacks and spells always critically hit targets below a percentage health.",
          "champions":[
             {
@@ -921,6 +942,7 @@
       },
       {
          "name":"Vanguard",
+         "icon":"Vanguard",
          "description":"Vanguard champions gain bonus Armor.",
          "champions":[
             {
@@ -967,6 +989,7 @@
       },
       {
          "name":"Void",
+         "icon":"Void",
          "description":"Attacks and spells from Void champions deal true damage.",
          "champions":[
             {

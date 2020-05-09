@@ -11,6 +11,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="6dip"
+            android:adjustViewBounds="true"
             android:src="@mipmap/ic_launcher"
             android:contentDescription="@string/todo_text" />
 

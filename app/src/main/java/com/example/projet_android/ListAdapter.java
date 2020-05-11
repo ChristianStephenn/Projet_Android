@@ -37,6 +37,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         }
     }
 
+
+
     public void add(int position, ClasseEtOrigine item) {
         values.add(position, item);
         notifyItemInserted(position);

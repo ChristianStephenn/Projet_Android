@@ -1,4 +1,4 @@
-package com.example.projet_android;
+package com.example.projet_android.presentation.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projet_android.presentation.model.ClasseEtOrigine;
+import com.example.projet_android.R;
+import com.example.projet_android.presentation.model.Champion;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.squareup.picasso.Picasso;
@@ -36,8 +39,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             imageView = (ImageView) v.findViewById(R.id.icon);
         }
     }
-
-
 
     public void add(int position, ClasseEtOrigine item) {
         values.add(position, item);

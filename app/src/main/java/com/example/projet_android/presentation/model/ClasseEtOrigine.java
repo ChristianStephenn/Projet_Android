@@ -1,4 +1,6 @@
-package com.example.projet_android;
+package com.example.projet_android.presentation.model;
+
+import com.example.projet_android.presentation.model.Champion;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.projet_android;
+package com.example.projet_android.presentation.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.projet_android.R;
 import com.squareup.picasso.Picasso;
 
 public class DescriptionChampActivity extends AppCompatActivity {

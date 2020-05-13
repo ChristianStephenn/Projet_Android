@@ -2,7 +2,9 @@ package com.example.projet_android.presentation.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -72,6 +74,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, final int position) {
         final ClasseEtOrigine currentClass = values.get(position);
         holder.txtHeader.setText(currentClass.getName());
+        onItemClick(holder, currentClass);
+        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/ClassOrigin/" + currentClass.getIcon() + ".png";
+        Picasso.get().load(url).into(holder.imageView);
+        holder.txtFooter.setText(currentClass.getDescription());
+    }
+
+    private void onItemClick(ViewHolder holder, final ClasseEtOrigine currentClass){
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,9 +94,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                 context.startActivity(champ);
             }
         });
-        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/ClassOrigin/" + currentClass.getIcon() + ".png";
-        Picasso.get().load(url).into(holder.imageView);
-        holder.txtFooter.setText(currentClass.getDescription());
+
     }
 
     @Override

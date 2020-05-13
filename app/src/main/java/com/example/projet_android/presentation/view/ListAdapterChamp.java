@@ -74,6 +74,13 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         final String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
 
         holder.txtHeader.setText(currentChamp.getName());
+        onItemClick(holder,currentChamp, url);
+        Picasso.get().load(url).into(holder.imageView);
+        String coast = "Classes or origins: " + currentChamp.getTraitsToString();
+        holder.txtFooter.setText(coast);
+    }
+
+    private void onItemClick(ViewHolder holder, final Champion currentChamp, final String url){
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,9 +93,6 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
                 context.startActivity(DescChamp);
             }
         });
-        Picasso.get().load(url).into(holder.imageView);
-        String coast = "Classes or origins: " + currentChamp.getTraitsToString();
-        holder.txtFooter.setText(coast);
     }
 
     @Override

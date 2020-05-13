@@ -1,4 +1,4 @@
-package com.example.projet_android;
+package com.example.projet_android.presentation.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projet_android.R;
+import com.example.projet_android.presentation.model.Champion;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -88,7 +90,6 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         String coast = "Classes or origins: " + currentChamp.getTraitsToString();
         holder.txtFooter.setText(coast);
     }
-
 
     @Override
     public int getItemCount() {

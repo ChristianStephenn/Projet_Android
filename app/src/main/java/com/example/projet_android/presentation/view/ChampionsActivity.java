@@ -1,7 +1,6 @@
 package com.example.projet_android.presentation.view;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -36,7 +35,7 @@ public class ChampionsActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapterChamp(champList, getBaseContext());
+        mAdapter = new ListAdapterChamp(champList, getApplicationContext());
         recyclerView.setAdapter(mAdapter);
     }
 }

@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(classList, getBaseContext());
+        mAdapter = new ListAdapter(classList, getApplicationContext());
         recyclerView.setAdapter(mAdapter);
     }
 

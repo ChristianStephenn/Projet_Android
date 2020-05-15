@@ -7,4 +7,5 @@
     <string name="champion_name">Champion Name</string>
     <string name="champion_coast">champion Coast</string>
     <string name="champion_class">champion Class</string>
+    <string name="my_team_Button">My team</string>
 </resources>

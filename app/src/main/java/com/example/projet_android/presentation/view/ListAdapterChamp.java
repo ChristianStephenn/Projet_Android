@@ -1,7 +1,5 @@
 package com.example.projet_android.presentation.view;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +16,11 @@ import java.util.List;
 
 public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.ViewHolder> {
     private List<Champion> values;
-    private Context context;
+    private OnItemClickListenerChamp listenerchamp;
+
+    public interface OnItemClickListenerChamp {
+        void onItemClick(Champion item, String url);
+    }
 
     class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
@@ -47,9 +49,9 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    ListAdapterChamp(List<Champion> myDataset,  Context context) {
-        values = myDataset;
-        this.context = context;
+    ListAdapterChamp(List<Champion> myDataset, OnItemClickListenerChamp listenerchamp) {
+        this.values = myDataset;
+        this.listenerchamp = listenerchamp;
     }
 
     // Create new views (invoked by the layout manager)
@@ -74,23 +76,12 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         final String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
 
         holder.txtHeader.setText(currentChamp.getName());
-        onItemClick(holder,currentChamp, url);
         Picasso.get().load(url).into(holder.imageView);
         String coast = "Classes or origins: " + currentChamp.getTraitsToString();
         holder.txtFooter.setText(coast);
-    }
-
-    private void onItemClick(ViewHolder holder, final Champion currentChamp, final String url){
-        holder.layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent DescChamp = new Intent(context, DescriptionChampActivity.class);
-                DescChamp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                DescChamp.putExtra("url", url);
-                DescChamp.putExtra("ChampName", currentChamp.getName());
-                DescChamp.putExtra("ChampCoast", currentChamp.getCost());
-                DescChamp.putExtra("ChampClass", currentChamp.getTraitsToString());
-                context.startActivity(DescChamp);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                listenerchamp.onItemClick(currentChamp, url);
             }
         });
     }

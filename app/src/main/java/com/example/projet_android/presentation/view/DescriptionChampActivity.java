@@ -18,7 +18,6 @@ public class DescriptionChampActivity extends AppCompatActivity {
 
         descChampController = new DescChampController(this, getIntent());
         descChampController.onStart();
-        descChampController.onBackButtonClick();
 
     }
 }

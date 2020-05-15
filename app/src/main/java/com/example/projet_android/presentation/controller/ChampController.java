@@ -54,4 +54,8 @@ public class ChampController {
             }
         });
     }
+
+    public void onItemClick(Champion champion, String url) {
+        view.navigateToDetails(champion, url);
+    }
 }

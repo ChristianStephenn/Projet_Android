@@ -7,8 +7,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.projet_android.R;
+import com.example.projet_android.presentation.Singletons;
+import com.example.projet_android.presentation.model.Champion;
 import com.example.projet_android.presentation.view.DescriptionChampActivity;
+import com.google.gson.reflect.TypeToken;
 import com.squareup.picasso.Picasso;
+
+import java.lang.reflect.Type;
 
 public class DescChampController {
 
@@ -19,6 +24,8 @@ public class DescChampController {
     private TextView textViewcoast;
     private TextView textViewclass;
     private Button button_return;
+    private Button button_ajt;
+    private Champion champion;
 
     public DescChampController(DescriptionChampActivity view, Intent intent) {
         this.view = view;
@@ -31,18 +38,19 @@ public class DescChampController {
         textViewname = (TextView) view.findViewById(R.id.ChampName);
         textViewcoast = (TextView) view.findViewById(R.id.ChampCoast);
         textViewclass = (TextView) view.findViewById(R.id.ChampClass);
+        Type ListType = new TypeToken<Champion>() {
+        }.getType();
 
         String url = intent.getStringExtra("url");
+        champion = Singletons.getGson().fromJson(intent.getStringExtra("Champ"), ListType);
 
-        String champname = intent.getStringExtra("ChampName");
-
-        Integer champcoast = intent.getIntExtra("ChampCoast", 0);
-        String strcoast = "Coast: " + champcoast.toString();
-
-        String champclass = intent.getStringExtra("ChampClass");
-        String strclass = "Class or origin: " + champclass;
-
-        setItems(url, champname, strcoast, strclass);
+        if(champion != null) {
+            String strcoast = "Coast: " + champion.getCost();
+            String strclass = "Class or origin: " + champion.getTraitsToString();
+            setItems(url, champion.getName(), strcoast, strclass);
+        }
+        onBackButtonClick();
+        //onAddButtonClick();
     }
 
     private void setItems(String url, String champname, String strcoast, String strclass){
@@ -52,8 +60,7 @@ public class DescChampController {
         textViewclass.setText(strclass);
     }
 
-    public void onBackButtonClick(){
-
+    private void onBackButtonClick(){
         button_return = (Button) view.findViewById(R.id.button_Desc_return);
         button_return.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,4 +69,18 @@ public class DescChampController {
             }
         });
     }
+
+    /*private void onAddButtonClick(){
+        final String champ = Singletons.getGson().toJson(champion);
+        button_ajt = (Button) view.findViewById(R.id.Add_Button);
+        button_ajt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent retour = new Intent();
+                retour.putExtra("champion", champ);
+                view.setResult(1,retour);
+                view.finish();
+            }
+        });
+    }*/
 }

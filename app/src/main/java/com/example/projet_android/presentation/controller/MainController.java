@@ -1,8 +1,11 @@
 package com.example.projet_android.presentation.controller;
 
 import android.content.SharedPreferences;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.projet_android.R;
 import com.example.projet_android.presentation.Constants;
 import com.example.projet_android.presentation.Singletons;
 import com.example.projet_android.presentation.model.ClasseEtOrigine;
@@ -23,6 +26,7 @@ public class MainController {
     private SharedPreferences sharedpreferences;
     private Gson gson;
     private MainActivity view;
+    private Button button_team;
 
 
     public MainController(MainActivity view, Gson gson, SharedPreferences sharedPreferences){
@@ -39,6 +43,17 @@ public class MainController {
         }else{
             MakeApiCall();
         }
+        onTeamButtonClick();
+    }
+
+    private void onTeamButtonClick(){
+        button_team = (Button) view.findViewById(R.id.MyTeamButton);
+        button_team.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(view.getApplicationContext(), "click", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void MakeApiCall(){
@@ -83,5 +98,9 @@ public class MainController {
             }.getType();
             return gson.fromJson(jsonList, ListType);
         }
+    }
+
+    public void onItemClick(ClasseEtOrigine classe) {
+        view.navigateToDetails(classe);
     }
 }

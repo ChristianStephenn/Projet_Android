@@ -1,5 +1,6 @@
 package com.example.projet_android.presentation.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.projet_android.R;
 import com.example.projet_android.presentation.Singletons;
 import com.example.projet_android.presentation.controller.MainController;
+import com.example.projet_android.presentation.model.Champion;
 import com.example.projet_android.presentation.model.ClasseEtOrigine;
 
 import java.util.List;
@@ -36,11 +38,27 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(classList, getApplicationContext());
+        mAdapter = new ListAdapter(classList, new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ClasseEtOrigine item) {
+                controller.onItemClick(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
     }
 
     public void showError() {
         Toast.makeText(getApplicationContext(), "API Error", Toast.LENGTH_SHORT).show();
+    }
+
+    public void navigateToDetails(ClasseEtOrigine classe) {
+        List<Champion> champList = classe.getChampions();
+        String jsonList = Singletons.getGson().toJson(champList);
+        Intent champ = new Intent(MainActivity.this, ChampionsActivity.class);
+        champ.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        champ.putExtra("className", classe.getName());
+        champ.putExtra("Desc",classe.getDescription());
+        champ.putExtra("champList",jsonList);
+        MainActivity.this.startActivity(champ);
     }
 }

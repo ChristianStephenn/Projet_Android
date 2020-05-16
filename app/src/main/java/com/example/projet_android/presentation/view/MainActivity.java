@@ -55,10 +55,16 @@ public class MainActivity extends AppCompatActivity {
         List<Champion> champList = classe.getChampions();
         String jsonList = Singletons.getGson().toJson(champList);
         Intent champ = new Intent(MainActivity.this, ChampionsActivity.class);
-        champ.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         champ.putExtra("className", classe.getName());
         champ.putExtra("Desc",classe.getDescription());
         champ.putExtra("champList",jsonList);
         MainActivity.this.startActivity(champ);
+    }
+
+    public void navigateToTeam(List<Champion> teamList) {
+        Intent myTeam = new Intent(MainActivity.this, MyTeamActivity.class);
+        String jsonTeamList = Singletons.getGson().toJson(teamList);
+        myTeam.putExtra("myTeamList", jsonTeamList);
+        MainActivity.this.startActivity(myTeam);
     }
 }

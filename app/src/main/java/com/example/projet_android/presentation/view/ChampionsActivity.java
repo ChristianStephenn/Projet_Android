@@ -1,5 +1,6 @@
 package com.example.projet_android.presentation.view;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -29,17 +30,6 @@ public class ChampionsActivity extends AppCompatActivity {
         champController = new ChampController(this, getIntent());
         champController.onStart();
         champController.onBackButtonClick();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if( resultCode==1 ) {
-            String s ="new " + data.getStringExtra("champion");
-            Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
-        }
-        super.onActivityResult(requestCode, resultCode, data);
-
     }
 
     public void showChampList(List<Champion> champList) {

@@ -32,9 +32,9 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         ViewHolder(View v) {
             super(v);
             layout = v;
-            txtHeader = (TextView) v.findViewById(R.id.firstLine);
-            txtFooter = (TextView) v.findViewById(R.id.secondLine);
-            imageView = (ImageView) v.findViewById(R.id.icon);
+            txtHeader = v.findViewById(R.id.firstLine);
+            txtFooter = v.findViewById(R.id.secondLine);
+            imageView = v.findViewById(R.id.icon);
         }
     }
 

@@ -1,9 +1,7 @@
 package com.example.projet_android.presentation.view;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -33,7 +31,7 @@ public class ChampionsActivity extends AppCompatActivity {
     }
 
     public void showChampList(List<Champion> champList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_champ);
+        recyclerView = findViewById(R.id.recycler_view_champ);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

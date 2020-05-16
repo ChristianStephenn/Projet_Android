@@ -1,6 +1,5 @@
 package com.example.projet_android.presentation.controller;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -12,8 +11,6 @@ import com.example.projet_android.R;
 import com.example.projet_android.presentation.Constants;
 import com.example.projet_android.presentation.Singletons;
 import com.example.projet_android.presentation.model.Champion;
-import com.example.projet_android.presentation.model.ClasseEtOrigine;
-import com.example.projet_android.presentation.view.ChampionsActivity;
 import com.example.projet_android.presentation.view.DescriptionChampActivity;
 import com.google.gson.reflect.TypeToken;
 import com.squareup.picasso.Picasso;
@@ -78,7 +75,7 @@ public class DescChampController {
     }
 
     private void onAddButtonClick(){
-        button_ajt = (Button) view.findViewById(R.id.Add_Button);
+        button_ajt = view.findViewById(R.id.Add_Button);
         button_ajt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +88,7 @@ public class DescChampController {
     private void addChamp(Champion champ) {
         List<Champion> teamList = getTeamListFromCache();
         if(teamList == null){
-            teamList = creacteList(champ);
+            teamList = creacteList();
         }
         if(!verifteam(champ, teamList)){
             if(teamList.size() < 9) {
@@ -121,7 +118,7 @@ public class DescChampController {
         return false;
     }
 
-    private List<Champion> creacteList(Champion champ) {
+    private List<Champion> creacteList() {
         List<Champion> teamList = new ArrayList<>();
         return teamList;
     }

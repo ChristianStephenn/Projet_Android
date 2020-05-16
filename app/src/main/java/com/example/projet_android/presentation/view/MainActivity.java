@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showList(List<ClasseEtOrigine> classList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

@@ -29,7 +29,7 @@ public class MyTeamActivity extends AppCompatActivity {
     }
 
     public void showTeamList(List<Champion> champList) {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_team);
+        recyclerView = findViewById(R.id.recycler_view_team);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

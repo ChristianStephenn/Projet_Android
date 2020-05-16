@@ -47,7 +47,7 @@ public class MainController {
     }
 
     private void onTeamButtonClick(){
-        button_team = (Button) view.findViewById(R.id.MyTeamButton);
+        button_team = view.findViewById(R.id.MyTeamButton);
         button_team.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

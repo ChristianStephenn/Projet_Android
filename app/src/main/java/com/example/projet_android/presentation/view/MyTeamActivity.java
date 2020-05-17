@@ -15,7 +15,7 @@ import java.util.List;
 public class MyTeamActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private ListAdapterChamp mAdapter;
+    private ListAdapterMyTeam mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private MyTeamController myTeamController;
 
@@ -33,13 +33,15 @@ public class MyTeamActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new ListAdapterChamp(champList, new ListAdapterChamp.OnItemClickListenerChamp() {
+        mAdapter = new ListAdapterMyTeam(champList, new ListAdapterMyTeam.OnItemClickListenerTeamChamp() {
             @Override
-            public void onItemClick(Champion item, String url) {
-                //myTeamController.onItemClick(item, url);
+            public void onItemClick(Champion item) {
+                myTeamController.removeItem(item);
             }
         });
         recyclerView.setAdapter(mAdapter);
     }
+
+
 
 }

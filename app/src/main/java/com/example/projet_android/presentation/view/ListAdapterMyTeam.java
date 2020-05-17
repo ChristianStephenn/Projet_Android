@@ -9,17 +9,17 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projet_android.R;
-import com.example.projet_android.presentation.model.ClasseEtOrigine;
+import com.example.projet_android.presentation.model.Champion;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
-    private List<ClasseEtOrigine> values;
-    private OnItemClickListener listener;
+public class ListAdapterMyTeam extends RecyclerView.Adapter<ListAdapterMyTeam.ViewHolder> {
+    private List<Champion> values;
+    private OnItemClickListenerTeamChamp listenerchamp;
 
-    public interface OnItemClickListener {
-        void onItemClick(ClasseEtOrigine item);
+    public interface OnItemClickListenerTeamChamp {
+        void onItemClick(Champion item);
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -38,25 +38,26 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         }
     }
 
-    public void add(int position, ClasseEtOrigine item) {
+    public void add(int position, Champion item) {
         values.add(position, item);
         notifyItemInserted(position);
     }
 
-    public void remove(int position) {
+    private void remove(int position) {
         values.remove(position);
         notifyItemRemoved(position);
     }
 
-    ListAdapter(List<ClasseEtOrigine> myDataset, OnItemClickListener listener) {
+    // Provide a suitable constructor (depends on the kind of dataset)
+    ListAdapterMyTeam(List<Champion> myDataset, OnItemClickListenerTeamChamp listenerchamp) {
         this.values = myDataset;
-        this.listener = listener;
+        this.listenerchamp = listenerchamp;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public ListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+    public ListAdapterMyTeam.ViewHolder onCreateViewHolder(ViewGroup parent,
+                                                          int viewType) {
         // create a new view
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
@@ -67,17 +68,23 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         return vh;
     }
 
+    // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position) {
-        final ClasseEtOrigine currentClass = values.get(position);
-        holder.txtHeader.setText(currentClass.getName());
-        String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/ClassOrigin/" + currentClass.getIcon() + ".png";
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
+
+        final Champion currentChamp = values.get(position);
+        final String url = "https://raw.githubusercontent.com/ChristianStephenn/Projet_Android/master/img/Champions/" + currentChamp.getIcon() + ".png";
+
+        holder.txtHeader.setText(currentChamp.getName());
         Picasso.get().load(url).into(holder.imageView);
-        holder.txtFooter.setText(currentClass.getDescription());
+        String coast = "Classes or origins: " + currentChamp.getTraitsToString();
+        holder.txtFooter.setText(coast);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                listener.onItemClick(currentClass);
+                listenerchamp.onItemClick(currentChamp);
+                remove(holder.getAdapterPosition());
             }
+
         });
     }
 
@@ -85,4 +92,5 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     public int getItemCount() {
         return values.size();
     }
+
 }

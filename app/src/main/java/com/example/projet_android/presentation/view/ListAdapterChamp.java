@@ -22,7 +22,7 @@ public class ListAdapterChamp extends RecyclerView.Adapter<ListAdapterChamp.View
         void onItemClick(Champion item, String url);
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         TextView txtHeader;
         TextView txtFooter;

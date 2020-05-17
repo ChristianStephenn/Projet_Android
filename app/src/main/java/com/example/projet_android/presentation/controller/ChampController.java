@@ -34,7 +34,7 @@ public class ChampController {
         String activity_title = intent.getStringExtra("className");
         view.setTitle(activity_title);
 
-        textView = (TextView) view.findViewById(R.id.DescClass);
+        textView = view.findViewById(R.id.DescClass);
         String Desc = intent.getStringExtra("Desc");
         textView.setText(Desc);
 
@@ -46,7 +46,7 @@ public class ChampController {
 
     public void onBackButtonClick(){
 
-        button_return = (Button) view.findViewById(R.id.button_return);
+        button_return = view.findViewById(R.id.button_return);
         button_return.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

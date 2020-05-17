@@ -41,7 +41,4 @@ public class MyTeamActivity extends AppCompatActivity {
         });
         recyclerView.setAdapter(mAdapter);
     }
-
-
-
 }

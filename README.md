@@ -5,12 +5,12 @@
   Présentation
 </h2>
 <p>
-  Un petit projet mettant en avant les notions du développement mobile vue en cours sur AndroidStudio dans une application codé en Java. 
+  Un petit projet mettant en avant les notions du développement mobile vu en cours sur Android Studio dans une application codée en Java. 
   <br>
-  Cette application affiche la liste des champions disponible sur le jeux Teamfight Tactics de Riot Games, trié par classes et/ou orignes.
+  Cette application affiche la liste des champions disponibles sur le jeu Teamfight Tactics de Riot Games, triées par classes et/ou origines.
   De plus, on peut créer et sauvegarder une équipe de 9 champions.
   <br>
-  Cette application utilise une API hébergé sur GitHub, elle contient toute les informations sur les champions, classes et origines.
+  Cette application utilise une API hébergé sur GitHub, elle contient toutes les informations sur les champions, classes et origines.
   <br>
   Lien de l'API : <a href="https://github.com/ChristianStephenn/Projet_Android/blob/master/TFTAPI.json">TFTApi</a>
 </p>
@@ -38,18 +38,38 @@
 <h3>
   Écran d'accueil
 </h3>
-<ul><li>Affiche la liste des classes et origines</li></ul>
-<img src="img/imgReadMe/ListeClassesOrigines.jpg" width="20%" height="20%">
+<ul>
+  <li>Affiche la liste des classes et origines</li>
+  <li>Voir les champions de la classe ou origine en cliquant sur l'une d'elles</li>
+</ul>
+<img src="img/imgReadMe/ListeClassesOrigines.jpg" width="25%" height="25%">
 <h3>
-  Écran de la liste des champions d'une classes ou origines
+  Écran de la liste des champions d'une classe ou origine
 </h3>
-<ul><li>Affiche la liste des classes et origines</li></ul>
+<ul>
+  <li>Affiche la liste des champions d'une classe ou origine</li>
+  <li>Voir la description d'un des champions en cliquant sur l'une d'elles</li>
+  <li>Bouton retour</li>
+</ul>
 <div>
-  <img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%"> 
-  <img src="img/imgReadMe/ListChampion2.jpg" width="20%" height="20%">
+  <img src="img/imgReadMe/ListeChampions.jpg" width="25%" height="25%"> 
+  <img src="img/imgReadMe/ListChampion2.jpg" width="25%" height="25%">
 </div>
 <h3>
-  Écran de la liste des champions d'une classes ou origines
+  Écran de la description d'un champion
 </h3>
-<ul><li>Affiche la description d'un champion</li></ul>
-<img src="img/imgReadMe/DescChampion.jpg" width="20%" height="20%">
+<ul>
+  <li>Affiche la description d'un champion</li>
+  <li>bouton permettant de l'ajouter à notre équipe</li>
+  <li>Bouton retour</li>
+</ul>
+<img src="img/imgReadMe/DescChampion.jpg" width="25%" height="25%">
+<h3>
+  Écran de la liste des champions de votre équipe
+</h3>
+<ul>
+  <li>Affiche la liste des champions de votre équipe</li>
+  <li>bouton permettant de vider votre équipe</li>
+  <li>supprimer un champion de votre équipe en cliquant sur l'une d'elles</li>
+</ul>
+<img src="img/imgReadMe/ListMyTeam.jpg" width="25%" height="25%">

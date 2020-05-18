@@ -44,10 +44,9 @@
   Écran de la liste des champions d'une classes ou origines
 </h3>
 <ul><li>Affiche la liste des classes et origines</li></ul>
-<img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%">
-<img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%" left-marge="20px">
+<img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%"> <img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%">
 <h3>
   Écran de la liste des champions d'une classes ou origines
 </h3>
 <ul><li>Affiche la description d'un champion</li></ul>
-<img src="img/imgReadMe/ListeChampions.jpg" width="20%" height="20%">
+<img src="img/imgReadMe/DescChampion.jpg" width="20%" height="20%">

@@ -29,7 +29,7 @@
     <li>Appel WebService à une API Rest</li>
     <li>Stockage de données en cache</li>
     <li>Gitflow</li>
-    <li>fonctionnalité : My Team</li>
+    <li>fonctionnalité supplémentaire: My Team</li>
   </ul>
 </p>
 <h2>
@@ -60,7 +60,7 @@
 </h3>
 <ul>
   <li>Affiche la description d'un champion</li>
-  <li>bouton permettant de l'ajouter à notre équipe</li>
+  <li>bouton permettant de l'ajouter à votre équipe</li>
   <li>Bouton retour</li>
 </ul>
 <img src="img/imgReadMe/DescChampion.jpg" width="25%" height="25%">

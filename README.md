@@ -39,3 +39,4 @@
   Écran d'accueil
 </h3>
 <ul><li>Affiche la liste des classes et origines</li></ul>
+<img src="">

@@ -12,7 +12,7 @@
   <br>
   Cette application utilise une API hébergé sur GitHub, elle contient toute les informations sur les champions, classes et origines.
   <br>
-  Lien de l'API : https://github.com/ChristianStephenn/Projet_Android/blob/master/TFTAPI.json
+  Lien de l'API : <a href="https://github.com/ChristianStephenn/Projet_Android/blob/master/TFTAPI.json">TFTApi</a>
 </p>
 <h2>
   Consignes respectées :

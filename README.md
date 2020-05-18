@@ -35,4 +35,7 @@
 <h2>
   Fonctionnalités :
 </h2>
-
+<h3>
+  Écran d'accueil
+</h3>
+<ul><li>Affiche la liste des classes et origines</li></ul>

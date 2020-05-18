@@ -39,4 +39,9 @@
   Écran d'accueil
 </h3>
 <ul><li>Affiche la liste des classes et origines</li></ul>
-<img src="img/imgReadMe/ListeClassesOrigines.jpg" width="25%" height="25%">
+<img src="img/imgReadMe/ListeClassesOrigines.jpg" width="20%" height="20%">
+<h3>
+  Écran de la liste des champions d'une classes ou origines
+</h3>
+<ul><li>Affiche la liste des classes et origines</li></ul>
+<img src="img/imgReadMe/ListeClassesOrigines.jpg" width="20%" height="20%">

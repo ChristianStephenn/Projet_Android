@@ -84,7 +84,6 @@ public class ListAdapterMyTeam extends RecyclerView.Adapter<ListAdapterMyTeam.Vi
                 listenerchamp.onItemClick(currentChamp);
                 remove(holder.getAdapterPosition());
             }
-
         });
     }
 

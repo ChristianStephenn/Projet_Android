@@ -102,7 +102,6 @@ public class MyTeamController {
                 teamList.remove(i);
                 saveNewTeamList();
                 Toast.makeText(view.getApplicationContext(), "Champion removed", Toast.LENGTH_SHORT).show();
-                //view.finish();
                 break;
             }
         }

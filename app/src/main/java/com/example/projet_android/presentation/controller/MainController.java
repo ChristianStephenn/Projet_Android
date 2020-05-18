@@ -54,6 +54,8 @@ public class MainController {
                 final List<Champion> teamList = getTeamListFromCache();
                 if(teamList != null){
                     view.navigateToTeam(teamList);
+                }else{
+                    Toast.makeText(view.getApplicationContext(), "Your team is empty", Toast.LENGTH_SHORT).show();
                 }
             }
         });
